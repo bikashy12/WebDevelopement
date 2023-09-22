@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, ,shrink-to-fit=no">
+	<style>
+    body{
+        margin:0; 
+        padding: 0;
+        background-color: #E9E9E9;
+    }
+    #navbar{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    li img{
+        width:20px;
+        height:20px;
+    }
+    li{
+        display: inline-block;
+        height:30px;
+        width: 100%;
+        padding: 5px 10px;
+        margin-top: 0;
+        text-align: center;
+    }
+    li:hover{
+        background-color: #43B73A;
+        color: white;
+    }
+    ul{
+        list-style-type: none;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    footer{
+        margin-top: 37%;
+    }
+
+    footer p{
+        text-align: center;
+        background-color: #CBCBCB;
+        padding-top:15px;
+        padding-bottom: 15px;
+        margin-bottom: 0;
+    }
+    main{
+        height:600px;
+        width: 800px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 10px;
+    }
+    .form-group div{
+        padding:30px;
+    }
+    .form-group div:last-child textarea{
+        margin-left:27px;
+        float: left;
+        height:80px;
+        width: 700px;
+        position: relative;
+        right:25px;
+    }
+    h3{
+        padding-top:25px;
+        padding-left:10px;
+        margin-bottom: 5px;
+    }
+    button{
+        margin: auto 50%;
+    }
+    @media screen and (max-width: 1024px) {
+      .container{
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      .container{
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      li span{
+        display: none;
+      }
+      .form-group{
+        display:block;
+      }
+      .form-group div{
+        display: block;
+        padding:10px;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      main{
+        height: 700px;
+        width: 500px;
+      }
+      .form-group div:last-child textarea{
+        margin-left:27px;
+        margin-bottom:8px;
+        float: left;
+        height:80px;
+        width: 450px;
+        position: relative;
+        right:25px;
+    }
+    }
+	</style>
+    <head>
+    <body>
+    <header>
+    <nav id="navbar">
+        <ul class="container">
+            <li><img src="./usericon.png"> <span>ABOUT ME</span></li>
+            <li><img src="./icon-2.png"> <span>RESUME</span></li>
+            <li><img src="./icon-3.png"> <span>PORTFOLIO</span></li>
+            <li><img src="./icon-4.png"> <span>CONTACT ME</span></li>
+        </ul>
+    </nav>
+	</header>
+    <main>
+        <div class="detail-holder">
+        <h3>CONTACT ME</h3>
+        <hr>
+        <div class="form-group">
+            <div>
+            <label for="firstName">First Name</label><br>
+            <input name="firstName" id="firstname" type="text"><br>
+            </div>
+            <div>
+            <label for="lastName">Last Name</label><br>
+            <input name="lastName" id="lastname" type="text"><br>
+            </div>
+            <div>
+            <label for="DOB">Date Of Birth</label><br>
+            <input name="DOB" id="dob" type="date"><br>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input name="email" id="email" type="text"><br>
+            </div>
+            <div>
+                <label for="moblie">Mobile</label><br>
+                <input name="mobile" id="contact-mobile" type="text"><br>
+            </div>
+            <div>
+                <selectbox id="reason-select">
+                <label for="reason">Reason</label><br>
+                <select name="reason" id="Reason">
+                <option value="business">Business</option>
+                <option value="Other option">Other option</option>
+                </select>
+                </selectbox>
+            </div>
+            <div>
+                <label for="gender">Gender</label><br>
+                <input id="male" name="male" type="radio" value="Male">
+                <label for="male">Male</label>
+                <input id="female" name="female" type="radio">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <label for="modeOfWork">Prefferred Mode of Communication</label>
+                <br>
+                <input type="checkbox" id="mobile">
+                <label for="mobile">Mobile</label>
+                <input type="checkbox" id="email">
+                <label for="Email">Email</label>
+            </div>
+            <div>
+                <label for="message">Message</label><br>
+                <textarea id="message"></textarea>
+            </div>
+        </div>
+        </div>
+        <button type="submit">Submit</button>
+    </main>
+    <footer>
+        <p>© Copyright 2019 E-Box. All right reserved.</p> 
+    </footer>
+    </body>
+</html>

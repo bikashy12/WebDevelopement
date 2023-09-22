@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @font-face {
+    font-family: alex-brush;
+    src: url("./AlexBrush-Regular.ttf");
+    }
+    body{
+        font-family: alex-brush;
+    }
+    </style>
+</head>
+<body>
+    <form action="https://www.typing.academy/" method="post">
+        <fieldset>
+        <legend>Person Details</legend>
+        <label for="firstname">FirstName</label>
+        <input name="firstname" type="text" placeholder="FirstName" required><br><br>
+        <label for="secondname">SecondName</label>
+        <input name="secondname" type="text" placeholder="SecondName">
+        </fieldset>
+
+        <fieldset>
+            <legend>Address Details</legend>
+            <label for="city">City</label>
+            <input name="city" type="text" placeholder="City"><br><br>
+            <label for="pincode">Pincode</label>
+            <input name="pincode" type="text" placeholder="Pincode">
+        </fieldset><br><br>
+        <fieldset>
+            <legend> Details</legend>
+            <label for="email">Email</label>
+            <input name="email" type="text" placeholder="Email" required><br><br>
+            <label for="password">Password</label>
+            <input name="password" type="password" placeholder="Password" required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}">
+        </fieldset>
+        <input type="submit" value="Submit"><br>
+        <input formaction="http://google.com" type="submit" value="Cancel" formnovalidate><br>
+        </form>
+    </form>
+</body>
+</html>

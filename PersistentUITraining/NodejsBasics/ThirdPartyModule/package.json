@@ -1,0 +1,17 @@
+{
+  "name": "thirdpartymodule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "consume_third_party.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node consume_third_party.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mathjs": "^11.6.0"
+  }
+}

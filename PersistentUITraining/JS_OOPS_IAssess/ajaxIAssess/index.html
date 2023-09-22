@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body onload="loadJson()">
+    <h1>Book List</h1>
+    <div id="booklist"></div>
+    <div class="formData">
+        <label for="name">Book Name :</label>
+        <input id="name"><br><br>
+        <label for="price">Author Name :</label>
+        <input id="price"><br><br>
+        <label for="availableQuantity">Book Price :</label>
+        <input id="availableQuantity"><br><br>
+        <div class="fields"></div>
+        <button id="convertToJSON" type="submit" onclick="tojson()">Convert to JSON</button>
+    </div>
+    <div id="jsonData"></div>
+    <script>
+        const xhtr = new XMLHttpRequest() // XML object created
+        xhtr.open("GET", "./booklist.json"); // open the connection
+        xhtr.send()
+        function tojson() {
+            var bookName = document.getElementById("name").value;
+            var books = JSON.parse(xhtr.responseText)
+            for (i in books) {
+                if (books[i].bookname == bookName) {
+                    var bookObject = {
+                        "Book Name": books[i].bookname,
+                        "Author Name": books[i].authorname,
+                        "Price ": `${books[i].price}`
+                    }
+                    document.getElementById("jsonData").innerHTML = `<p>${JSON.stringify(bookObject)}</p>`;
+                    return;
+                }
+            }
+        }
+        function loadJson() {
+            xhtr.onreadystatechange = () => {
+                if (xhtr.readyState == 4 && xhtr.status == 200) {
+                    var books = JSON.parse(xhtr.responseText)
+                    var table = document.createElement("table")
+                    var body = document.createElement('tbody');
+
+                    var tr = document.createElement("tr")
+                    var td1 = document.createElement("th")
+                    var in1 = document.createTextNode("Book Name")
+                    td1.appendChild(in1)
+
+                    var td2 = document.createElement("th")
+                    var in2 = document.createTextNode("Author Name")
+                    td2.appendChild(in2)
+
+                    var td3 = document.createElement("th")
+                    var in3 = document.createTextNode("Price")
+                    td3.appendChild(in3)
+
+                    tr.appendChild(td1)
+                    tr.appendChild(td2)
+                    tr.appendChild(td3)
+                    body.appendChild(tr);
+                    table.appendChild(body);
+                    for (i in books) {
+                        var tr2 = document.createElement("tr")
+
+                        var td11 = document.createElement("td")
+                        var in11 = document.createTextNode(books[i].bookname)
+                        td11.appendChild(in11)
+
+                        var td12 = document.createElement("td")
+                        var in12 = document.createTextNode(books[i].authorname)
+                        td12.appendChild(in12)
+
+                        var td13 = document.createElement("td")
+                        var in13 = document.createTextNode(books[i].price)
+                        td13.appendChild(in13)
+
+                        tr2.appendChild(td11)
+                        tr2.appendChild(td12)
+                        tr2.appendChild(td13)
+
+                        body.appendChild(tr2);
+                        table.appendChild(body);
+                    }
+                    document.getElementById("booklist").appendChild(table)
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    background-color: hsla(245 27% 40%);
+    color: white;
+}
+.footer-section p,div{
+    margin: 0;
+    padding: 0;
+}
+.footer-section p{
+    color: hsl(0 0% 0%/0.8);
+    color: white;
+}
+.social_buttons {
+    display: flex;
+    float: left;
+    font-size: 2rem;
+}
+.social-icons{
+    display: inline;
+}
+.btn{
+    margin-right: 1rem;
+    transition:transform 0.01s ease;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+

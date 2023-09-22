@@ -1,0 +1,132 @@
+/****************** html Element property specification *****************/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #a1c3ff;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+
+/***************** classes and Ids property specification *******************/
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  height: 60px;
+  background: #3474e6;
+  color: #fff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: lightblue;
+}
+
+.navbar .icon {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.header {
+  background-color: #0151cc;
+  color: #fff;
+  min-height: 400px;
+}
+
+.header h1 {
+  line-height: 1.2;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header img {
+  max-width: 400px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container p {
+  font-size: 1rem;
+}
+
+.boxes .container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+}
+
+.box {
+  flex: 1;
+  background: #0a51cc;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+}
+
+/****************** changing the layout according to size of the screen ****************************/
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .boxes .container {
+    display: block;
+    text-align: center;
+  }
+}

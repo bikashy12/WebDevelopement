@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>137006400285-pble9hemv4qh0j14022kd708ikkdv68i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.137006400285-pble9hemv4qh0j14022kd708ikkdv68i</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>137006400285-00n82jr7lm95v951dsodv6s97uoeokb9.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAdRBqQ5-7Ngo_73eFPEm_nu13H7GkePcM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>137006400285</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.govava.app</string>
+	<key>PROJECT_ID</key>
+	<string>govava-app-310107</string>
+	<key>STORAGE_BUCKET</key>
+	<string>govava-app-310107.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:137006400285:ios:a80fc7fd7457e64638d7f4</string>
+</dict>
+</plist>

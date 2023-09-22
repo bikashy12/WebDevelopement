@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0; 
+    padding:0;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+}
+#shoppingCart{
+    text-align: center;
+    margin:0; 
+    padding:5px;
+    color: white;
+    font-weight: 200;
+    background-color: #ed5624;
+    margin-bottom: 20px;
+}

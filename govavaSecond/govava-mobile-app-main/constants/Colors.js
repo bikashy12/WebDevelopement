@@ -1,0 +1,15 @@
+export default {
+  primaryColor: '#4a148c',
+  accentColor: '#ff6f00',
+  buttonDisableColor: '#3e0624',
+  buttonEnableColor: '#3e0624',
+  placeholderTextColor: '#50a7b1',
+  linkTextColor: '#FFFFFF',
+  // primary: '#aad576',
+  primary: '#21B3E8F6',
+  third: '#73a942',
+  buttonPrimaryColor: '#d3ebf5',
+  buttonSecondColor: '#1A6FB0',
+  containerBackgroundColor: '#d2effa',
+  containerBorderColor: '#0f7399',
+};

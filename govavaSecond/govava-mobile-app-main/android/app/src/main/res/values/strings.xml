@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GOVAVA</string>
+<string name="facebook_app_id">304262227760636</string>
+<string name="fb_login_protocol_scheme">fb304262227760636</string>
+</resources>

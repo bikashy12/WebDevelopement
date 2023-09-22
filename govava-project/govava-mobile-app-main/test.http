@@ -1,0 +1,9 @@
+POST https://40xmxaq9he.execute-api.ap-south-1.amazonaws.com/production/customer/persona/getPersonas HTTP/1.1
+Content-Type: application/json
+
+{
+  "ch_type":"active_lifestyle",
+  "type":"Girls",
+  "gender":"null"
+}
+###

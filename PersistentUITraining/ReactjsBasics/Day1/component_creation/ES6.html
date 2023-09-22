@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- It will give us React object using which we can create component-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.10.2/umd/react.development.js"></script>
+    <!--It will give us ReactDOm using which we can do DOM manipulation/render etc.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.10.2/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo1"></div>
+    <script>
+        class HelloComp extends React.Component{
+            render(){
+                return React.createElement('div', {"id":"myDiv"}, "Hello World from ES6")
+            }
+        }
+        ReactDOM.render(React.createElement(HelloComp), document.getElementById("demo1"))
+    </script>
+</body>
+</html>

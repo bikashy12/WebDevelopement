@@ -1,0 +1,18 @@
+we can send pass data in request using - 
+1. URL - query / Route Parameter 
+2. Body - How to retrieve data from the body 
+we can send data in json,xml, urlencoded(KEY:VALUE pairs, html form) etc.
+
+Web Application which is handling UI also(view engine)etc. server is responsible for UI change
+Web application which will handle data only : Restful APIs  server is responsible for data
+
+Javascript 
+xmlhttprequest, fetch : consumed some APIs
+
+MongoDB 
+stores data similar to json format : Binary json
+saving data in the form of documents
+
+Analogy to MongoDB
+Table -> Collection
+Record -> Document 

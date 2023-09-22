@@ -1,0 +1,24 @@
+.container {
+    width: auto;
+    height:50rem;
+    background-color: rgb(226, 237, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    width: 40%;
+    text-align: left;
+    padding: 2rem 2rem;
+    margin-right: 2rem;
+}
+
+b {
+    font-size: 4rem;
+}
+
+.form {
+    width: 40%;
+    padding: 1rem 2rem;
+}

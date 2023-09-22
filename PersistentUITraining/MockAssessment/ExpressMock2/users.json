@@ -1,0 +1,44 @@
+{
+  "user-1": {
+    "name": "John",
+    "userId": "1",
+    "dob": "30-08-2000",
+    "email": "john@email.com",
+    "contactNumber": "9956451278"
+  },
+  "user-2": {
+    "name": "James",
+    "userId": "2",
+    "dob": "01-09-1997",
+    "email": "james@email.com",
+    "contactNumber": "8923412311"
+  },
+  "user-3": {
+    "name": "William",
+    "userId": "3",
+    "dob": "03-09-2002",
+    "email": "william@email.com",
+    "contactNumber": "9923116722"
+  },
+  "user-4": {
+    "name": "Amy",
+    "userId": "4",
+    "dob": "05-05-1990",
+    "email": "amy@email.com",
+    "contactNumber": "9942514725"
+  },
+  "user-5": {
+    "name": "Jack",
+    "userId": "5",
+    "dob": "25-02-2010",
+    "email": "jack@email.com",
+    "contactNumber": "9854323122"
+  },
+  "user-6": {
+    "name": "Bikash Yadav",
+    "userId": "6",
+    "dob": "10/10/1999",
+    "email": "bikash@gmail.com",
+    "contactNumber": "1234567892"
+  }
+}

@@ -1,0 +1,87 @@
+/*******************ROUTERJIO PLANS CSS*********************/
+navbar ul{
+    display: flex; 
+    flex-direction: column;
+    row-gap: 30px;
+    list-style-type: none;
+    margin-left: -30px;
+}
+navbar #topup-sidebar{
+    position: absolute;
+    height: 69px;
+    width: 3px;
+    top: 1px;
+    left: 63px;
+    background-color: #0096ee;
+}
+navbar #threegb-sidebar{
+    position: absolute;
+    height: 69px;
+    width: 3px;
+    top: 70px;
+    left: 63px;
+    background-color: #0096ee;
+}
+navbar #twogb-sidebar{
+    position: absolute;
+    height: 69px;
+    width: 3px;
+    top: 139px;
+    left: 63px;
+    background-color: #0096ee;
+}
+navbar{
+    margin: 0;
+    float: left;
+    height: 100vh;
+    padding-right: 15px;
+    box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+        0px 3px 14px 2px rgba(0, 0, 0, 0.12),
+        0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+navbar li img{
+    height: 40px;
+    width: 40px;
+}
+
+/************************* TOPUP PLANS ************************/
+#topHeading{
+  margin-left: 85px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.priceHeading{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.plan-card{
+    height:125px;
+    width: 350px;
+    margin-left:35px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 10px 0px rgba(0, 0, 0, 0.12),
+        0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 20px;
+    row-gap: 10px;
+}
+
+/* .planCard-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 20px;
+    row-gap: 10px;
+} */
+
+.plan-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+} 

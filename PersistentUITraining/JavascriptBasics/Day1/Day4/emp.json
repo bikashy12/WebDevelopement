@@ -1,0 +1,22 @@
+[
+    {
+        "id": 101,
+        "empname": "satish",
+        "education": "B.E Elect"
+    },
+    {
+        "id": 102,
+        "empname":"Ketan",
+        "education":"B.E E&TC"
+    },
+    {
+        "id": 103,
+        "empname": "Kirtee",
+        "education": "B.E. Comp"
+    },
+    {
+        "id": 104, 
+        "empname":"John",
+        "education": "B.E IT"
+    }
+]

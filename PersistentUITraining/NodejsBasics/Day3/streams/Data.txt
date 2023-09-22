@@ -1,0 +1,6 @@
+This is the third live session on Node Basics.
+Today's session is about Streams concept.
+This concept is about handling the large amount of data in more efficient way. 
+Traditional way is of Buffering technique which loads entire file or data in one go in memory which also 
+takes significant amount of space. Since the data is large response also get delay.
+Using Streams we read and write data in small chunks increasing response time and saving memory space.

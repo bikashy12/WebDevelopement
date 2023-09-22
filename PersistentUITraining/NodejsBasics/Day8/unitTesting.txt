@@ -1,0 +1,27 @@
+It is a testing method where individual component 
+
+Different framework to do testing
+Mocha, Jest, Jasmine
+
+function(a, b){
+
+}
+
+Mocha : It is a testing framework using which we can run test 
+Mocha is third-party module/comes with functionality so it is also known as framework
+
+Assertion Library 
+we will check expected output with actual output
+Different Module
+assert 
+chai 
+
+Unit Testing : Test Cases ---> Developement Part
+
+
+/****************************/
+function GetEmpById(id){
+    var emp = getEmpFromDb()
+}
+
+axios we can call external apis

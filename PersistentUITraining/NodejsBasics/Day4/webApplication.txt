@@ -1,0 +1,30 @@
+Types of Web Application
+1. Web application ->Request-URL Response-HTML
+2. Restful APIs -> Request-URL Response-DATA(JSON, XML etc)
+
+Response -> server will inspect the url and accordingly send the Response
+Routing -> mapping of incoming request with handler(function to handle request)
+
+http Methods -> put, get, delete, post
+for web application we need a server where application will run
+
+Install packages globally when it has command line utility
+
+
+we can send data in Request 
+1. URL 
+Query Parameter -> http://bookmyshow.com/movies?city=pune
+Route Parameter -> http://bookmyshow.com/movies/Pune
+
+2. Request Body 
+
+
+MiddleWare 
+It sits in between response and request 
+
+Request -> MiddleWare1 -> MiddleWare2 -> Reponse
+app.use() It is used to mount middleware (userdefined/inbuilt Middleware)
+
+Position of app.use() matters It will be active to all the route handlers defined below it
+
+Morgan - It allow us to log all our request

@@ -1,0 +1,87 @@
+Reactjs is client side javascript library use for web developement.
+Different Frameworks - 
+js,jquery, 
+Library - reactjs(bundle of functionality),
+Framework - angular(predefined architecture)
+
+Features of React Js
+1.Based on Javascript
+2.Developement is based on Components
+Components - set of some functionality
+Home Page - Header, Navbar, Footer, ProductList turn into separate Components
+
+1.Virtual DOM 
+represent document in nodes and objects in web browser memory.
+DOM - representation of html tree
+Traverse DOM
+Manipulate DOM - whenever the dom Manipulation happens it re-renders the complete html page in browser
+Inorder to Tackle frequent re-rendering of html page - Virtual DOM
+
+2.Data Binding
+Binding data source to target
+class/variable ----------- view/UI
+a.One way data binding - 1.when source changes --> target is reflected 
+b.Two way data binding - 1.when source changes --> target is reflected 
+                       2.when target changes --> sources is reflected
+In Reactjs it has a One way data binding                       
+
+Ecmascript
+ES5
+ES6- some old may not support it so ES6 would be transpiled to ES5
+
+Different ES5 vs ES6
+1.var 1. let+const
+2.var-function level scope 2.let-block level scope
+object 
+function type declaration - ES5
+class type declaration - ES6
+
+
+npm 
+we will use npm packages(client side related packages)
+
+Different way of component creation 
+-CDN links -- use component by including external link 
+-npm packages -- 
+
+creating component using JSX used for rendering JSX 
+we can write HTML+JS code
+
+Browser does not understand JSX so we have to transpile it into javascript
+using babel we will convert jsx+ES6 into javascript
+Transpilation happens at the client side with every request 
+
+pre-compilation can be done using babel-CLI
+but it will handle babel-dependencies(eg.jsx).On the contrary our project will contain lot of dependencies that also 
+needs to be handled 
+so to tackle these issue one module bundler will be used to handle all the dependencies compilation
+Webpack 
+Two ways of using it - 
+1.Doing manual configuration 
+2.using create-react-app -----------> Currently using this way 
+
+
+
+shell page - index.html(which contains a container div)
+index.js 
+It is the starting file which will render out the components 
+
+app.js - It is returning some UI here
+
+Types of components 
+
+1.Functional Components 
+Before 1.16 version functional state were stateless
+after this version they have added react hooks using which we can maintain state within our Functional components
+function foo(){
+    return <div></div>
+}
+
+2.Class Components 
+class foo extends React.Component{
+    render(){
+        return <div></div>
+    }
+}
+
+child component can't modify props(read only) passed to it

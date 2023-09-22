@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="main-heading">Hello React Developers</h1>
+        <input type="text" onchange="textChange()"></input>
+        <button onclick="change()">Change Above Text</button>
+        <p id="input-text"></p>
+    </div>
+    <script>
+        let courseList1 = ["HTML", "Javascript", "Angular", "React"]
+        let courseList2 = ["Java", "JSP", "Servlet"]
+        let toatalCourses = [...courseList1, courseList2]
+        toatalCourses = ["Grails", toatalCourses]
+        var isTextChanged = false; 
+        function change(){
+            !isTextChanged ? 
+            document.getElementById("main-heading").innerText = "Hello Angular Developers"
+            : document.getElementById("main-heading").innerText = "Hello React Developers";
+            isTextChanged = !isTextChanged; 
+        }
+        document.write(toatalCourses)
+    </script>
+</body>
+</html>

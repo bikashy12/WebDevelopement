@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "137006400285",
+    "project_id": "govava-app-310107",
+    "storage_bucket": "govava-app-310107.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137006400285:android:1465823841a16ff938d7f4",
+        "android_client_info": {
+          "package_name": "com.govava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137006400285-5qg39g92ct35pmk38h5gvulk5ut1uhau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtnfnghlQUQRSPotzLQhR6v8E-Cfe2gag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137006400285-5qg39g92ct35pmk38h5gvulk5ut1uhau.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "137006400285-pble9hemv4qh0j14022kd708ikkdv68i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.govava.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

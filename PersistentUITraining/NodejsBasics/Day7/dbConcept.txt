@@ -1,0 +1,3 @@
+using http headers while sending request we can send additional data to the server 
+In response we can get some kind of response header
+content-type : while sending data to the server using request body use content-type

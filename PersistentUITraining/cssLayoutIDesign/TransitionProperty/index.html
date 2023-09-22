@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<!--Enter your text here-->
+	<head>
+    <style>
+		/************ Tag Selector *************/
+		h2{
+			text-align: center;
+		}
+
+		/************ Class and Id selector**********/
+		.image{
+			height:500px;
+			width: 700px;
+			z-index: 1;
+		}
+		#container{
+			position: relative;
+			display: flex;
+			flex-direction: row;
+		}
+		#overlay{
+			overflow : hidden;
+			transition:1s ease;
+			width:0px;
+			position : absolute;
+			background-color: #fe9d9d;
+			height : 100%;
+		}
+		#text{
+			transform:translate(-270px, -100px);
+			text-align : justify;
+			position : absolute;
+			width:82%;
+			padding-top:15%;
+			padding-left:4%;
+			padding-right:4%;
+		}
+	</style>
+	</head>
+	<body>
+		<h2>Wedding Event</h2>
+		<div id="container">
+			<img src="./image.jpg" class="image" onmouseover="showText()" onmouseout="hideText()">
+			<div id="overlay">
+				<div id="text">
+					A wedding is a ceremony where two people or a couple are united in marriage. Wedding traditions and customs vary greatly
+					between cultures, ethnic groups, religions, countries, and social classes. Most wedding ceremonies involve an exchange
+					of marriage vows by the couple, presentation of a gift (offering, ring(s), symbolic item, flowers, money), and a public
+					proclamation of marriage by an authority figure or celebrant. Special wedding garments are often worn, and the ceremony
+					is sometimes followed by a wedding reception. Music, poetry, prayers or readings from religious texts or literature are
+					also commonly incorporated into the ceremony.
+				</div>
+			</div>
+		</div>
+		<script>
+           function showText(){
+				   var text = document.getElementById("overlay");
+				//    var content = document.getElementById("text");
+				//    content.setAttribute("style", "transform: translate(270px, 100px);")
+				   text.setAttribute("style", "transform: translateX(700px); width:700px; transition: transform 2s ease-in-out, width 2.5s ease-in-out;")
+		   }
+		   function hideText() {
+				var text = document.getElementById("overlay");
+				text.setAttribute("style", "width:0px; transform: width 4s ease-in-out;")
+			}
+		</script>
+	</body>
+</html>

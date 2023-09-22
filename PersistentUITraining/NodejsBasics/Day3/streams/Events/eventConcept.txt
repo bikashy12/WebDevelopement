@@ -1,0 +1,7 @@
+Events - user action 
+Business Events - that we can configure in Nodejs
+User Created Events/ Custom Events - 
+user authentication events - Register ---> EventHandler
+
+Publishing Event  - emit('Register')
+Subscribing Event - on('Register')

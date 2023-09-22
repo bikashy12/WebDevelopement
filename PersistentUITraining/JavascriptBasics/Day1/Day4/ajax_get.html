@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        // to get data from emp.json and print it on the webpage
+        const xhtr = new XMLHttpRequest() // XML object created
+        xhtr.open("GET", "./emp.json"); // open the connection
+        xhtr.send()
+        xhtr.onreadystatechange = function(){
+            if(xhtr.readyState==4 && xhtr.status == 200){
+               var emp = JSON.parse(xhtr.responseText)
+               console.log(emp);
+                var table = document.createElement("resultTable")
+
+                var tr = document.createElement("tr")
+                var td1 = document.createElement("td")
+                var in1 = document.createTextNode("Emp id")
+                td1.appendChild(in1)
+
+                var td2 = document.createElement("td")
+                var in2 = document.createTextNode("Emp Name")
+                td2.appendChild(in2)
+
+                var td3 = document.createElement("td")
+                var in3 = document.createTextNode("Emp Education")
+                td3.appendChild(in3)
+
+                tr.appendChild(td1)
+                tr.appendChild(td2)
+                tr.appendChild(td3)
+
+                table.appendChild(tr)
+               for(i in emp){
+                   console.log(emp[i].id);
+                   let tr2 = document.createElement("tr")
+                   let td4 = document.createElement("td")
+                   let in4 = document.createTextNode(emp[i].id)
+                   td4.appendChild(in4)
+
+                   let td5 = document.createElement("td")
+                   let in5 = document.createTextNode(emp[i].empname)
+                   td5.appendChild(in5)
+
+                   let td6 = document.createElement("td")
+                   let in6 = document.createTextNode(emp[i].education)
+                   td6.appendChild(in6)
+
+                   tr2.appendChild(td4)
+                   tr2.appendChild(td5)
+                   tr2.appendChild(td6)
+
+                   table.appendChild(tr2)
+               }
+               document.getElementById("result").appendChild(table)
+            }
+            xhtr.send()
+        }
+        // fetch("./emp.json").then(res=>(res.text())).then(
+        //     emp=>{
+        //     var { id, empname, education } = emp;
+        //     }
+        //     )
+    </script>
+</body>
+</html>

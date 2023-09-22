@@ -1,0 +1,32 @@
+Show Movie Details
+
+Conditional rendering as a term describes the ability to render different UI markup based on certain conditions. Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator to create elements representing the current state, and let React update the UI to match them
+
+ShowTime is a start up which plans to make ticket booking for movies online. As a part of the application when a movie card is clicked, the details of the movie should be displayed. 
+Design a web application where the movie detail is displayed by conditional rendering using ReactJs.
+
+Procedure:
+Design a component with header,left panel and right panel.
+Header should contain the type of movie streaming (Now showing, coming soon, exclusive)
+Left panel should contain the filters (language,gener,format)
+Right panel should contain the list of movies in card format with respect to the selected filter.
+When a card with movie image is clicked, the header,left panel and right panel should be replaced with a component MovieDetails.
+MovieDetails component should contain a movie poster, tab with summary and show timings, and the synopsis of the movie.
+
+Note:
+Strict to the specifications mentioned in the screenshots.
+Images, Categories for filter and Movies list are given as template.
+Important note – Start working on the template code which is provided. 
+Template code will provide the base template or format in which the end solution is expected from you. 
+Template code is not an executable code and will only help you to add code on top of it to ensure your submissions are in the right format. 
+If the submission is NOT as per the template code format, then the submissions will not be accepted.
+
+
+Screenshot 3:
+The id of each card should contain a string ‘card’ appended by the movie id ex: cards1 where s1 is showingnow1, cardc1 where c1 is comingsoon1, carde1 where e1 is exclusive1.
+Similarly, the id of each image should contain a string ‘image’ appended by the movie id ex: images1,imagec1,imagee1.
+
+Colours Required : 
+grey - #e0e0e0
+Navbar Violet - #764aff
+MovieDetails Black Color : #000000

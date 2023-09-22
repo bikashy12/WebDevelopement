@@ -1,0 +1,48 @@
+table,th,tr,td{
+ border: 1px solid black; 
+ border-collapse: collapse;
+ text-align: center;
+}
+td{
+    padding:5px 50px;
+}
+th{
+    background-color: #00b265;
+}
+.productList{
+    margin:auto 15%;
+}
+.table-heading{
+  text-align: center;
+}
+#cardDetail{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0 0 0/0.3);
+}
+.back{
+    padding : 5px 10px;
+}
+tr>td:last-of-type{
+    color:blue;
+}
+.card{
+    margin-left:30%;
+}
+.card h3{
+    margin: 20px;
+    padding: 0;
+    margin-left: 10%;
+}
+.card button{
+    margin: 20px;
+    padding: 0;
+    margin-left: 15%;
+    padding: 5px 10px;
+}

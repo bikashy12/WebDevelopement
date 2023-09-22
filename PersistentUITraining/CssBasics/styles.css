@@ -1,0 +1,31 @@
+body{
+    background-color: whitesmoke;
+    margin: 0; 
+    padding: 0;
+}
+
+caption{
+    margin-bottom:10px;
+}
+
+table{
+   position: absolute;
+   font-size: large;
+   color : lightslategray;
+   background-color: lightblue;
+   left: 35%;
+   top: 26%;
+}
+
+table thead,caption{
+    color: lightseagreen;
+    font-weight: 300;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table, td, th{
+    border: 3px white solid;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 10px;
+}

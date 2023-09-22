@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{height: 100px; width: 250px;} 
+        h3{font-weight: bold;}
+        main{margin-left:40%;}
+        div{margin-top: 15px;}
+    </style>
+</head>
+<body>
+    <center>
+    <h3>Oninput Event</h3>
+    <textarea oninput="displayContent()" id="myContent"></textarea>
+    <div id="result"></div>
+    </center>
+    <script>
+        function displayContent(){
+           var contentArea = document.getElementById("result");
+           var event =document.getElementById('myContent');
+           contentArea.innerText = `Typed text is : ${event.value}`
+        }
+    </script>
+</body>
+</html>

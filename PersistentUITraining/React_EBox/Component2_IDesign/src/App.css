@@ -1,0 +1,34 @@
+/* Element Selectors  */
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-left: 20px;
+}
+label,input, select{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+input,select{
+    width: 250px;
+}
+
+/* Class Selectors */
+.field {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 100px;
+    flex-basis: 25%;
+}
+
+.text-box {
+    display:flex;
+    flex-flow: row wrap;
+    column-gap:30px;
+    justify-content: flex-start;
+}

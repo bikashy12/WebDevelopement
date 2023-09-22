@@ -1,0 +1,18 @@
+*{
+box-sizing: border-box;
+}
+:root{
+    --nav-bgColor : #fff;
+    --main-bgColor : #f2f2fd;
+    --primary-buttonBgColor : #4f4a81;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family:"Open Sans",sans-serif;
+}
+.primary-button:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}

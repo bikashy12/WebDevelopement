@@ -1,0 +1,125 @@
+span.span {
+    /* position: relative; */
+    /* margin: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 225px;
+}
+.container{
+    width: 90%;
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+  }
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.product-img {
+    height: 100px;
+    border: 5px solid;
+    width: 92px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.product-name {
+    font-weight: 700;
+    font-size: large;
+}
+
+.product-card {
+    display: flex;
+    width: 55%;
+    margin: 20px;
+    padding: 3px;
+    background-color: #8080802b;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.prod-img {
+    height: 170px;
+}
+.view-product {
+    text-align: center;
+    float: left;
+    line-height: 2;
+    padding: 10px;
+    width: 20%;
+    width: auto;
+    margin: 20px;
+    padding: 40px;
+    min-height: 200px;
+    box-shadow:3px 3px 5px 6px #ccc
+}
+.product-list {
+    float: left;
+    width: 50%
+}
+button#addProduct {
+    border: navajowhite;
+    padding: 20px;
+    width: 100%;
+    margin: 10px;
+    color: white;
+    background: black;
+}
+h1{
+    margin-left: 40%;
+}
+li img{
+    height: 100px;
+    width: 100px;
+    border:3px solid black;
+    margin-right: 5px;
+}
+.products li{
+    list-style-type: none;
+    font-weight: 700;
+    background-color: #eaeaea;
+    width: 350px;
+    margin-bottom: 8px;
+    padding-right: 30px;
+}
+.products{
+    margin-top: 20px;
+}
+#prod-section{
+    float: right;
+    margin-top: 0;
+    margin-right: 30%;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    padding:4% 2%;
+    position: relative;
+    bottom:865px;
+} 
+#prod-img{
+    height: 200px;
+    width: 200px;
+    margin-left:15%;
+}
+#prod-section div,button{
+    margin-left: 25%;
+    line-height: 2;
+}
+#prod-section .prod-price,button{
+    margin-left: 30%;
+}
+#prod-section button{
+    margin-left: 15%;
+    width:200px;
+    background-color: black;
+    color: white;
+    border-style: none;
+}

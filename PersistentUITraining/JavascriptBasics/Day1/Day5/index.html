@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            margin-top:15px;
+            line-height: 2;
+            margin-left: 40%;
+        }
+        h2{
+            text-align:center;
+        }
+        #result{
+            margin-left: 270px;
+        }
+        th,tr,td{
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Details</h2>
+    <div id="result"></div>
+    <div id="form">
+        <div>
+            <label for="id">Student Id : </label>
+            <input name="id" id="id" type="text">
+        </div>
+        <div>
+            <label for="fieldType">Field Type : </label>
+            <select id="fieldType">
+                <option value="Name">Name</option>
+                <option value="DOB">DOB</option>
+                <option value="Mobile Number">Mobile Number</option>
+                <option value="Email">Email</option>
+                <option value="Address">Address</option>
+                <option value="DOJ">DOJ</option>
+                <option value="Department">Department</option>
+                <option value="Mark">Mark</option>
+            </select>
+        </div>
+        <div>
+            <label for="fieldValue">Field Value : </label>
+            <input name="fieldValue" id="fieldValue" type="text">
+        </div>
+        <button value="UPDATE" type="submit" onclick="updateInfo()">UPDATE</button>
+        <!-- <div id="jsonData"></div> -->
+    </div>
+    <script>
+        function updateInfo(){
+            var fieldTypeMap = new Map()
+            fieldTypeMap.set("Id", 0)
+            fieldTypeMap.set("Name", 1); fieldTypeMap.set("DOB", 2); fieldTypeMap.set("Mobile Number", 3); fieldTypeMap.set("Email", 4)
+            fieldTypeMap.set("Address", 5); fieldTypeMap.set("DOJ", 6); fieldTypeMap.set("Department", 7); fieldTypeMap.set("Mark", 8)
+            var Id = document.getElementById("id").value;
+            var replace = document.getElementById("fieldType").value;
+            var replaceWith = document.getElementById("fieldValue").value;
+            var table = document.getElementsByTagName("resulttable");
+            var tr = table[0].getElementsByTagName("tr");
+            var replaceWithField = fieldTypeMap.get(replace);
+            tr[Id].getElementsByTagName("td")[replaceWithField].innerText=`${replaceWith}`;
+            document.getElementById("id").value=``
+            document.getElementById("fieldType").value=`Name`
+            document.getElementById("fieldValue").value=``
+        }
+        // to get data from emp.json and print it on the webpage
+        const xhtr = new XMLHttpRequest() // XML object created
+        xhtr.open("GET", "./Students.json"); // open the connection
+        xhtr.send()
+        xhtr.onreadystatechange = function () {
+            if (xhtr.readyState == 4 && xhtr.status == 200) {
+                var students = JSON.parse(xhtr.responseText)
+                console.log(students);
+                var table = document.createElement("resultTable")
+
+                var tr = document.createElement("tr")
+                var td1 = document.createElement("th")
+                var in1 = document.createTextNode("Id")
+                td1.appendChild(in1)
+
+                var td2 = document.createElement("th")
+                var in2 = document.createTextNode("Name")
+                td2.appendChild(in2)
+
+                var td3 = document.createElement("th")
+                var in3 = document.createTextNode("DOB")
+                td3.appendChild(in3)
+
+                var td4 = document.createElement("th")
+                var in4 = document.createTextNode("Mobile Number")
+                td4.appendChild(in4)
+
+                var td5 = document.createElement("th")
+                var in5 = document.createTextNode("Email")
+                td5.appendChild(in5)
+
+                var td6 = document.createElement("th")
+                var in6 = document.createTextNode("Address")
+                td6.appendChild(in6)
+
+                var td7 = document.createElement("th")
+                var in7 = document.createTextNode("DOJ")
+                td7.appendChild(in7)
+
+                var td8 = document.createElement("th")
+                var in8 = document.createTextNode("Department")
+                td8.appendChild(in8)
+
+                var td9 = document.createElement("th")
+                var in9 = document.createTextNode("Mark")
+                td9.appendChild(in9)
+
+                tr.appendChild(td1)
+                tr.appendChild(td2)
+                tr.appendChild(td3)
+                tr.appendChild(td4)
+                tr.appendChild(td5)
+                tr.appendChild(td6)
+                tr.appendChild(td7)
+                tr.appendChild(td8)
+                tr.appendChild(td9)
+
+                table.appendChild(tr)
+                for (i in students) {
+                    var tr2 = document.createElement("tr")
+
+                    var td11 = document.createElement("td")
+                    var in11 = document.createTextNode(students[i].id)
+                    td11.appendChild(in11)
+
+                    var td12 = document.createElement("td")
+                    var in12 = document.createTextNode(students[i].name)
+                    td12.appendChild(in12)
+
+                    var td13 = document.createElement("td")
+                    var in13 = document.createTextNode(students[i].DOB)
+                    td13.appendChild(in13)
+
+                    var td14 = document.createElement("td")
+                    var in14 = document.createTextNode(students[i].mobileNumber)
+                    td14.appendChild(in14)
+
+                    var td15 = document.createElement("td")
+                    var in15 = document.createTextNode(students[i].email)
+                    td15.appendChild(in15)
+
+                    var td16 = document.createElement("td")
+                    var in16 = document.createTextNode(students[i].address)
+                    td16.appendChild(in16)
+
+                    var td17 = document.createElement("td")
+                    var in17 = document.createTextNode(students[i].DOJ)
+                    td17.appendChild(in17)
+
+                    var td18 = document.createElement("td")
+                    var in18 = document.createTextNode(students[i].department)
+                    td18.appendChild(in18)
+
+                    var td19 = document.createElement("td")
+                    var in19 = document.createTextNode(students[i].mark)
+                    td19.appendChild(in19)
+
+                    tr2.appendChild(td11)
+                    tr2.appendChild(td12)
+                    tr2.appendChild(td13)
+                    tr2.appendChild(td14)
+                    tr2.appendChild(td15)
+                    tr2.appendChild(td16)
+                    tr2.appendChild(td17)
+                    tr2.appendChild(td18)
+                    tr2.appendChild(td19)
+
+                    table.appendChild(tr2)
+                }
+                document.getElementById("result").appendChild(table)
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+            div{
+                display: inline;
+            }
+            div .success{
+                display: block;
+            }
+        </style>
+        <script>
+            var phoneNoError = false;
+            var cardNoError = false;
+            function checkPhoneNumber() {
+                //Fill code here
+                var phNo = document.getElementById("phoneNumber").value;
+                var errorMessagePhone = document.getElementById("phoneNumber_Warning")
+                if (isNaN(phNo)) {
+                    errorMessagePhone.innerText = "Phone Number must contains only digits";
+                    errorMessagePhone.style.color = "red";
+                    phoneNoError = true;
+                }
+                else if (!isNaN(phNo)) {
+                    if (phNo.length != 10) {
+                        errorMessagePhone.innerText = "Phone Number must be 10 digits";
+                        errorMessagePhone.style.color = "red";
+                        phoneNoError = true;
+                    }
+                    else {
+                        errorMessagePhone.innerText = "";
+                        phoneNoError = false;
+                    }
+                }
+            }
+            function checkCardNumber() {
+                //Fill code here
+                var cardNo = document.getElementById("cardNumber").value;
+                var errorMessageCard = document.getElementById("cardNumber_Warning")
+                if (isNaN(cardNo)) {
+                    errorMessageCard.innerText = "Card Number must contains only digits";
+                    errorMessageCard.style.color = "red";
+                    cardNoError = true;
+                }
+                else if (!isNaN(cardNo)) {
+                    if (cardNo.length != 16) {
+                        errorMessageCard.innerText = "Card Number must be 16 digits";
+                        errorMessageCard.style.color = "red";
+                        cardNoError = true;
+                    }
+                    else {
+                        errorMessageCard.innerText = "";
+                        cardNoError = false;
+                    }
+                }
+            }
+            function validate() {
+                    //Fill code here
+                    if (!cardNoError && !phoneNoError) {
+                        var successMessage = document.getElementById("success");
+                        successMessage.innerText = "Details stored in database";
+                        successMessage.style.color = "green";
+                    }
+                    else {
+                        var successMessage = document.getElementById("success");
+                        successMessage.innerText = "";
+                    }
+                }
+        </script>
+	</head>
+	<body>
+        <h3>Phone Number & Card Validation</h3>
+        Enter your Phone Number:<input type="text" id="phoneNumber" onkeydown="checkPhoneNumber()">
+        <div id="phoneNumber_Warning"></div></br></br>
+        
+        Enter your Card Number:<input type="text" id="cardNumber" onkeydown="checkCardNumber()">
+        <div id="cardNumber_Warning"></div></br></br>
+        <button type="button" id="validate" onclick="validate()">Validate</button></br></br>
+       <div id="success"></div>
+	</body>
+</html>
+

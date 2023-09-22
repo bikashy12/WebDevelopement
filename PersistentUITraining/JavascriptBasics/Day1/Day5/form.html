@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,button{
+            margin-bottom: 5px;
+        }
+        input{
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="bookName">
+        <label for="bookname">Book Name : </label>
+        <input name="bookname" id="bookname" type="text">
+    </div>
+    <div class="authorName">
+        <label for="authorname">Author Name : </label>
+        <input name="authorname" id="authorname" type="text">
+    </div>
+    <div class="bookPrice">
+        <label for="bookprice">Book price : </label>
+        <input name="bookprice" id="bookprice" type="text">
+    </div>
+    <button value="convert to json" type="submit" onclick="tojson()">Convert to JSON</button>
+    <div id="jsonData"></div>
+    </div>
+    <script>
+        function tojson(){
+            var name = document.getElementById("bookname").value;
+            var price = document.getElementById("bookprice").value;
+            var author = document.getElementById("authorname").value;
+            // Create Object literal
+            var obj1={
+                "Book Name":name,
+                "Author Name": author, 
+                "Price":price
+            }
+            var j=JSON.stringify(obj1);
+            document.getElementById("jsonData").innerHTML="Converted into Object"+j;
+        }
+    </script>
+</body>
+</html>
